@@ -17,6 +17,7 @@ class Country:
         else:
             self.states.remove(state)
 
+# this is a new comment
 
 class Estate(Country):
 
@@ -62,5 +63,3 @@ print(f"The cities of {ms.name} are {ms.cities}")
 
 print(sp.area)
 
-pb = Estate("Paraiba", 45, 2522123)
-pb
