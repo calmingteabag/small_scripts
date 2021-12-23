@@ -11,7 +11,7 @@ def gibberish():
     letters = "abcdefghijklmnopqrstuvwxyz"
     numeros = "1234567890-=!@#$%¨&*"
 
-    gibberish_size = random.randint(50, 100)
+    gibberish_size = random.randint(80, 100)
 
     # For each iteration, picks random character from string and add to another string
     for iterador in range(gibberish_size):

@@ -11,10 +11,10 @@ def secs_to_galaxy():
         a random gibberish
         """
         if usr_input.isdigit():
-            seconds = int(usr_input)
+            seconds = new_func(usr_input)
             break
         else:
-            usr_input = input("Typer a time in seconds: ")
+            usr_input = input("Type a time in seconds: ")
             continue
 
     min, sec = divmod(seconds, 60)
@@ -23,6 +23,10 @@ def secs_to_galaxy():
     year, day = divmod(day, 365)
 
     return sec, min, hour, day, year
+
+def new_func(usr_input):
+    seconds = int(usr_input)
+    return seconds
 
 
 secs_to_galaxy()
